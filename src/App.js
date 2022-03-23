@@ -16,10 +16,10 @@ function App() {
     <Router>
       <Navbar/>
       <Route exact path="/" component={Home}/>
-      <Route path="/topHeadline" component={TopHeadline}/>
+      <Route path="https://623ac5ee9d32a6048eb3c1b9--effervescent-sopapillas-06f69f.netlify.app//topHeadline" component={TopHeadline}/>
       <Route path="/sports" component={Sports}/>
       <Route path="/about" component={About}/>
-      <Route path="/business" component={Business}/>
+      <Route path="https://623ac5ee9d32a6048eb3c1b9--effervescent-sopapillas-06f69f.netlify.app//business" component={Business}/>
       <Route path="/technology" component={Technology}/>
       <Route path="/entertainment" component={Entertainment}/>
     </Router>
