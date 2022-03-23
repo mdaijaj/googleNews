@@ -17,11 +17,11 @@ function App() {
       <Navbar/>
       <Route exact path="/" component={Home}/>
       <Route path="https://623ac5ee9d32a6048eb3c1b9--effervescent-sopapillas-06f69f.netlify.app//topHeadline" component={TopHeadline}/>
-      <Route path="/sports" component={Sports}/>
-      <Route path="/about" component={About}/>
+      <Route path="https://623ac5ee9d32a6048eb3c1b9--effervescent-sopapillas-06f69f.netlify.app//sports" component={Sports}/>
+      <Route path="https://623ac5ee9d32a6048eb3c1b9--effervescent-sopapillas-06f69f.netlify.app//about" component={About}/>
       <Route path="https://623ac5ee9d32a6048eb3c1b9--effervescent-sopapillas-06f69f.netlify.app//business" component={Business}/>
-      <Route path="/technology" component={Technology}/>
-      <Route path="/entertainment" component={Entertainment}/>
+      <Route path="https://623ac5ee9d32a6048eb3c1b9--effervescent-sopapillas-06f69f.netlify.app//technology" component={Technology}/>
+      <Route path="https://623ac5ee9d32a6048eb3c1b9--effervescent-sopapillas-06f69f.netlify.app//entertainment" component={Entertainment}/>
     </Router>
     </>
   );
