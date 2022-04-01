@@ -30,7 +30,7 @@ const Business = () => {
 
     let imgpro={
         height: "250px",
-        width: "300px"
+        width: "320px",
     }
 
     return (
@@ -42,14 +42,18 @@ const Business = () => {
                 userData.map((element => {
 
                     return(
+                        <>
                         <div className="card bg-info">
                             <div className="card-body text-center">
                                 <img src={element.urlToImage} style={imgpro} />
-                                <strong><a href={element.url}><p className="card-text">{element.title}</p></a></strong>
+                                <a href={element.url}><h2 className="card-text">{element.title}</h2></a>
                                 <p className="card-text">{element.description}</p>
                                 <p className="card-text">{element.publishedAt}</p>
                             </div>
                         </div>
+                       
+                      </>
+                        
                     )
                 }))
             }

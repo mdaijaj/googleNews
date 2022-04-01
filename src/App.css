@@ -25,7 +25,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: green;
 }
 
 @keyframes App-logo-spin {
@@ -44,10 +44,15 @@
 
 
 .card{
-  height: 500px;
+  height: 550px;
 }
 
 .card-text{
-  font-size: 15px;
+  font-size: 18px;
+  color: white;
+}
+.card-body p{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
 }
 
