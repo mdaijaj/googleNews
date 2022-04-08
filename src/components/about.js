@@ -26,50 +26,28 @@ const Sports = () => {
 
     useEffect(() => {
         sportPage();
-    });
+    }, []);
 
     let imgpro = {
-        height: "250px",
-        width: "300px"
+        height: "450px",
+        width: "400px"
     }
-
-    // {
-    //     userData.map((element => {
-    //         return (
-    //             <>
-    //                 <div class="card">
-    //                     <img src={element.urlToImage} class="card-img-top" alt="..." />
-    //                     <div class="card-body">
-    //                         <h5 class="card-title">{element.url}</h5>
-    //                         <p class="card-text">{element.description}</p>
-    //                     </div>
-    //                     <div class="card-footer">
-    //                         <small class="text-muted">{element.publishedAt}</small>
-    //                     </div>
-    //                 </div>
-
-    //             </>
-    //         )
-    //     }))
-    // }
 
     return (
         <>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="row row-cols-2 row.d-flex row-cols-md-4 g-4">
                 {
                     userData.map((element => {
                         return (
                             <div class="col">
-                                <div class="card h-50">
+                                <div class="card h-60">
                                     <img src={element.urlToImage} class="card-img-top" alt="..." />
                                     <div class="card-body">
-                                        <h5 class="card-title">{element.author}</h5>
-                                        <p class="card-text">{element.content}</p>
-                                       {/* <a href={element.url}></a> <p class="card-text">{}</p> */}
-
+                                        <h3 class="card-title">{element.author}</h3>
+                                        <a href={element.url}><p1 class="card-text">{element.title}</p1></a>
                                         <p class="card-text">{element.description}</p>
-                                        <p class="card-text">{element.publishedAt}</p>
-
+                                        <p class="card-text">{element.content}</p>
+                                        <p1 class="card-text1">{element.publishedAt}</p1>
                                     </div>
                                 </div>
                             </div>

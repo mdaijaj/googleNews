@@ -26,7 +26,7 @@ const Entertainment = () => {
 
     useEffect(() => {
         entertainment();
-    });
+    }, []);
 
     let imgpro={
         height: "250px",
@@ -35,26 +35,27 @@ const Entertainment = () => {
 
     return (
         <>
-        <div className="container">
-            <center><h1>entertainment page</h1></center>
-            <div className="card-columns">
-            {
-                userData.map((element => {
-
-                    return(
-                        <div className="card bg-info">
-                            <div className="card-body text-center">
-                                <img src={element.urlToImage} style={imgpro} />
-                                <strong><a href={element.url}><p className="card-text">{element.title}</p></a></strong>
-                                <p className="card-text">{element.description}</p>
-                                <p className="card-text">{element.publishedAt}</p>
+        <center><h1>entertainment page</h1></center>
+        <div class="row row-cols-2 row.d-flex row-cols-md-4 g-4">
+                {
+                    userData.map((element => {
+                        return (
+                            <div class="col">
+                                <div class="card h-60">
+                                    <img src={element.urlToImage} class="card-img-top" alt="..." />
+                                    <div class="card-body">
+                                        <h3 class="card-title">{element.author}</h3>
+                                        <a href={element.url}><p1 class="card-text">{element.title}</p1></a>
+                                        <p class="card-text">{element.description}</p>
+                                        <p class="card-text">{element.content}</p>
+                                        <p1 class="card-text1">{element.publishedAt}</p1>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    )
-                }))
-            }
+                        )
+                    }))
+                }
             </div>
-        </div>
         </>
     )
 }
