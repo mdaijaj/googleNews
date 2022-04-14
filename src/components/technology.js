@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import '../App.css';
-const cors = require('cors')
+// const cors = require('cors')
 const axios = require('axios')
 
 
@@ -51,7 +51,7 @@ const Entertainment = () => {
                     return(
                         <div className="card bg-info">
                             <div className="card-body text-center">
-                                <img src={element.urlToImage} style={imgpro} />
+                                <img src={element.urlToImage} alt="not find image url" style={imgpro} />
                                 <strong><a href={element.url}><p className="card-text">{element.title}</p></a></strong>
                                 <p className="card-text">{element.description}</p>
                                 <p className="card-text">{element.publishedAt}</p>

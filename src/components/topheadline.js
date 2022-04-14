@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import '../App.css';
-import Footer from './footer';
+// import Footer from './footer';
 import axios from 'axios';
 
 
@@ -53,7 +53,7 @@ const TopHeadline = () => {
                     return(
                         <div className="card bg-info">
                             <div className="card-body text-center">
-                                <img src={element.urlToImage} style={imgpro} />
+                                <img src={element.urlToImage} style={imgpro} alt="not found url" />
                                 <strong><a href={element.url}><p className="card-text">{element.title}</p></a></strong>
                                 <p className="card-text">{element.description}</p>
                                 <p className="card-text">{element.publishedAt}</p>

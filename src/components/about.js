@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import '../App.css';
-const cors = require('cors')
 const axios = require('axios')
 
 

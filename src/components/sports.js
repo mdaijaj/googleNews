@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import '../App.css';
-const cors = require('cors')
+// const cors = require('cors')
 const axios = require('axios')
 
 
@@ -26,12 +26,7 @@ const Sports = () => {
 
   useEffect(() => {
     sportPage();
-  }, []);
-
-  let imgpro = {
-    height: "250px",
-    width: "300px"
-  }
+  });
 
   return (
     <>
